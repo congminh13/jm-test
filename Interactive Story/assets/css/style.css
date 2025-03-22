@@ -3,3 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.btn-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn-grid button {
+  padding: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
