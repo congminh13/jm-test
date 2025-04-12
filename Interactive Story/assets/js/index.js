@@ -5,7 +5,7 @@ const speed = 30; /* The speed/duration of the effect in milliseconds */
 let typingTimeout; // Save current timeout
 let historyStack;
 
-import textNodes from "../stories/story_1.json";
+import textNodes from "./eg-story";
 
 function typeWriter(txt, index = 0) {
     clearTimeout(typingTimeout); // Dừng hiệu ứng typing cũ trước khi chạy mới
