@@ -1,4 +1,4 @@
-export const textNodes = [
+const textNodes = [
   {
       id: 0,
       text: `You are Alex, a young scholar in the town of Eldoria. Legends tell of a powerful artifact hidden deep within the Whispering Woods, an object said to grant immense wisdom to whoever possesses it. 

@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Lost Artifact</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
-  <body>
+</head>
+<body>
 
+    <div class="music-container">
+    <audio class="music" controls autoplay muted loop>
+        <source src="./assets/audio/music_BackgroundAudio.mp3" type="audio/mpeg">
+        <source src="music/BackgroundAudio.wav" type="audio/wav">
+    </audio>
+</div>
+    
     <div class="container">
-      <div class="music-container">
-        <audio class="music" controls autoplay muted loop>
-          <source src="./assets/audio/music_BackgroundAudio.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-      <div id="text" class="text">
-        <p>Subtitles holder</p></div>
-      <div id="option-buttons" class="btn-grid">
-        <button class="btn">Option 1</button>
-        <button class="btn">Option 2</button>
-      </div>
+        <div id="text" class="text"></div>
+        <div id="option-buttons" class="btn-grid">
+            <button class="btn">Option 1</button>
+            <button class="btn">Option 2</button>
+        </div>
     </div>
 
     <div class="replay-container">
-      <button id="back-button" class="replay">Back</button>
+        <button id="back-button" class="replay" style="display: none;">Back</Replay></button>
     </div>
 
-    <script src="./assets/js/index.js"></script>
   </body>
+  <script src="./assets/js/index.js"></script>
 </html>
