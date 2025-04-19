@@ -199,8 +199,16 @@ function typeWriter(txt, index = 0) {
 }
 
 function changeBackground(url) {
-    document.body.style.backgroundImage = `url('${url}')`; // Use template literal
+    const body = document.body;
+    body.style.opacity = 0;
+    
+    setTimeout(() => {
+        body.style.backgroundImage = `url('./assets/images/${url}')`;
+        body.style.opacity = 1;
+    }, 500);
 }
+
+// Add this CSS transition rule to your style.css
 
 function saveHistory(textNodeIndex) {
     if (textNodeIndex > 0 && !historyStack.includes(textNodeIndex)) {
